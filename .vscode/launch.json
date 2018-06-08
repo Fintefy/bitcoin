@@ -1,0 +1,22 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  // src/bitcoind -datadir=/Users/leonliu/git/bitcoinData1 -txindex=1 -rpcuser=bcldev -rpcpassword=pass -server=1 -rpcallowip=0.0.0.0/0 -listen -regtest -port=19333 -rpcport=19332
+  // src/bitcoin-cli -rpcport=19332 -rpcuser=bcldev -rpcpassword=pass getinfo
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(bitcoin) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/bitcoind",
+      "args": ["-datadir=/Users/leonliu/git/bitcoinData1","-regtest", "-txindex=1", "-rpcuser=bcldev", "-rpcpassword=pass", "-server=1", "-rpcallowip=0.0.0.0/0", "-listen", "-port=19333", "-rpcport=19332"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "lldb"
+    }
+  ]
+}

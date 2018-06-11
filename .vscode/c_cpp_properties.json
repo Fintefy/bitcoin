@@ -11,7 +11,7 @@
             "includePath": [
                 "${workspaceFolder}",
                 "${workspaceFolder}/src",
-                "/usr/local/Cellar/qt/5.10.0_1"
+                "/usr/local/Cellar/qt/5.10.0_1/include/QtCore"
             ],
             "defines": [],
             "macFrameworkPath": [

@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core]])
-AC_INIT([Bitcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/bitcoin/bitcoin/issues],[bitcoin],[https://bitcoincore.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Jeton]])
+AC_INIT([Jeton],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/jeton/jeton/issues],[jeton],[https://jeton.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=bitcoind
-BITCOIN_GUI_NAME=bitcoin-qt
-BITCOIN_CLI_NAME=bitcoin-cli
-BITCOIN_TX_NAME=bitcoin-tx
+BITCOIN_DAEMON_NAME=jetond
+BITCOIN_GUI_NAME=jeton-qt
+BITCOIN_CLI_NAME=jeton-cli
+BITCOIN_TX_NAME=jeton-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -164,7 +164,7 @@ AC_ARG_ENABLE([lcov],
   [enable lcov testing (default is no)])],
   [use_lcov=$enableval],
   [use_lcov=no])
-
+  
 AC_ARG_ENABLE([lcov-branch-coverage],
   [AS_HELP_STRING([--enable-lcov-branch-coverage],
   [enable lcov testing branch coverage (default is no)])],
@@ -250,7 +250,6 @@ if test "x$CXXFLAGS_overridden" = "xno"; then
   AX_CHECK_COMPILE_FLAG([-Wformat],[CXXFLAGS="$CXXFLAGS -Wformat"],,[[$CXXFLAG_WERROR]])
   AX_CHECK_COMPILE_FLAG([-Wvla],[CXXFLAGS="$CXXFLAGS -Wvla"],,[[$CXXFLAG_WERROR]])
   AX_CHECK_COMPILE_FLAG([-Wformat-security],[CXXFLAGS="$CXXFLAGS -Wformat-security"],,[[$CXXFLAG_WERROR]])
-  AX_CHECK_COMPILE_FLAG([-Wthread-safety-analysis],[CXXFLAGS="$CXXFLAGS -Wthread-safety-analysis"],,[[$CXXFLAG_WERROR]])
 
   ## Some compilers (gcc) ignore unknown -Wno-* options, but warn about all
   ## unknown options if any other warning is produced. Test the -Wfoo case, and
@@ -1316,7 +1315,7 @@ case ${OS} in
    ;;
 esac
 
-echo
+echo 
 echo "Options used to compile and link:"
 echo "  with wallet   = $enable_wallet"
 echo "  with gui / qt = $bitcoin_enable_qt"
@@ -1331,7 +1330,7 @@ echo "  with upnp     = $use_upnp"
 echo "  use asm       = $use_asm"
 echo "  debug enabled = $enable_debug"
 echo "  werror        = $enable_werror"
-echo
+echo 
 echo "  target os     = $TARGET_OS"
 echo "  build os      = $BUILD_OS"
 echo
@@ -1342,4 +1341,4 @@ echo "  CXX           = $CXX"
 echo "  CXXFLAGS      = $CXXFLAGS"
 echo "  LDFLAGS       = $LDFLAGS"
 echo "  ARFLAGS       = $ARFLAGS"
-echo
+echo 

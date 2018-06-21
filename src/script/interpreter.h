@@ -24,9 +24,18 @@ enum
     SIGHASH_ALL = 1,
     SIGHASH_NONE = 2,
     SIGHASH_SINGLE = 3,
+    SIGHASH_FORKID = 0x40,
     SIGHASH_ANYONECANPAY = 0x80,
 };
 
+/** Fork IDs **/
+enum
+{
+    FORKID_BTC = 0,
+    FORKID_FORK = 111, // Atomic number Roentgenium
+};
+
+static const int FORKID_IN_USE = FORKID_FORK;
 /** Script verification flags.
  *
  *  All flags are intended to be soft forks: the set of acceptable scripts under
@@ -115,6 +124,9 @@ enum
     // Making OP_CODESEPARATOR and FindAndDelete fail any non-segwit scripts
     //
     SCRIPT_VERIFY_CONST_SCRIPTCODE = (1U << 16),
+
+    // Allow NON_FORKID in legacy tests and blocks under hard fork height
+    SCRIPT_ENABLE_SIGHASH_FORKID = (1U << 17),
 };
 
 bool CheckSignatureEncoding(const std::vector<unsigned char> &vchSig, unsigned int flags, ScriptError* serror);
@@ -133,7 +145,7 @@ enum SigVersion
     SIGVERSION_WITNESS_V0 = 1,
 };
 
-uint256 SignatureHash(const CScript &scriptCode, const CTransaction& txTo, unsigned int nIn, int nHashType, const CAmount& amount, SigVersion sigversion, const PrecomputedTransactionData* cache = nullptr);
+uint256 SignatureHash(const CScript &scriptCode, const CTransaction& txTo, unsigned int nIn, int nHashType, const CAmount& amount, SigVersion sigversion, const PrecomputedTransactionData* cache = nullptr, const int forkid=FORKID_IN_USE);
 
 class BaseSignatureChecker
 {

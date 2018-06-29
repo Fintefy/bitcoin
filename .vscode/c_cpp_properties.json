@@ -4,13 +4,16 @@
             "name": "Mac",
             "browse": {
                 "path": [
-                    "${workspaceFolder}"
+                    "${workspaceFolder}",
+                    "/usr/local/Cellar/qt/5.10.0_1/include",
+                    "/usr/local/Cellar/qt/5.10.0_1/include/QtCore"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },
             "includePath": [
                 "${workspaceFolder}",
                 "${workspaceFolder}/src",
+                "/usr/local/Cellar/qt/5.10.0_1/include",
                 "/usr/local/Cellar/qt/5.10.0_1/include/QtCore"
             ],
             "defines": [],

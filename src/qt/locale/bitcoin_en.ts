@@ -81,12 +81,12 @@
     <message>
         <location line="+7"/>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Jeton addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <translation>These are your addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your Jeton addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <translation>These are your addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -233,7 +233,7 @@
     <message>
         <location line="-56"/>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your jetons from being stolen by malware infecting your computer.</translation>
+        <translation>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -436,7 +436,7 @@
     <message>
         <location line="-511"/>
         <source>Send coins to a Bitcoin address</source>
-        <translation>Send coins to a Jeton address</translation>
+        <translation>Send coins to an address</translation>
     </message>
     <message>
         <location line="+67"/>
@@ -501,12 +501,12 @@
     <message>
         <location line="+7"/>
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Sign messages with your Jeton addresses to prove you own them</translation>
+        <translation>Sign messages with your addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Jeton addresses</translation>
+        <translation>Verify messages to ensure they were signed with specified addresses</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -531,7 +531,7 @@
     <message>
         <location line="-158"/>
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Request payments (generates QR codes and jeton: URIs)</translation>
+        <translation>Request payments (generates QR codes and acs: URIs)</translation>
     </message>
     <message>
         <location line="+70"/>
@@ -546,7 +546,7 @@
     <message>
         <location line="+3"/>
         <source>Open a bitcoin: URI or payment request</source>
-        <translation>Open a jeton: URI or payment request</translation>
+        <translation>Open a acs: URI or payment request</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -557,8 +557,8 @@
         <location line="+357"/>
         <source>%n active connection(s) to Bitcoin network</source>
         <translation>
-            <numerusform>%n active connection to Jeton network</numerusform>
-            <numerusform>%n active connections to Jeton network</numerusform>
+            <numerusform>%n active connection to Apicoureios network</numerusform>
+            <numerusform>%n active connections to Apicoureios network</numerusform>
         </translation>
     </message>
     <message>
@@ -617,7 +617,7 @@
     <message>
         <location line="-441"/>
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Show the %1 help message to get a list with possible Jeton command-line options</translation>
+        <translation>Show the %1 help message to get a list with possible Apicoureios command-line options</translation>
     </message>
     <message>
         <location line="+200"/>
@@ -697,7 +697,7 @@
     <message>
         <location filename="../bitcoin.cpp" line="+531"/>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Jeton can no longer continue safely and will quit.</translation>
+        <translation>A fatal error occurred. Apicoureios can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -940,7 +940,7 @@
     <message>
         <location line="+72"/>
         <source>The entered address &quot;%1&quot; is not a valid Bitcoin address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Jeton address.</translation>
+        <translation>The entered address &quot;%1&quot; is not a valid Apicoureios address.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1115,7 +1115,7 @@
     <message>
         <location line="+8"/>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>%1 will download and store a copy of the Jeton block chain.</translation>
+        <translation>%1 will download and store a copy of the Apicoureios block chain.</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1159,12 +1159,12 @@
     <message>
         <location line="+119"/>
         <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
-        <translation>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the jeton network, as detailed below.</translation>
+        <translation>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Apicoureios network, as detailed below.</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Attempting to spend jetons that are affected by not-yet-displayed transactions will not be accepted by the network.</translation>
+        <translation>Attempting to spend Apicoureioss that are affected by not-yet-displayed transactions will not be accepted by the network.</translation>
     </message>
     <message>
         <location line="+63"/>
@@ -1382,7 +1382,7 @@
     <message>
         <location line="+30"/>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Jeton client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <translation>Automatically open the Apicoureios client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1402,7 +1402,7 @@
     <message>
         <location line="+7"/>
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Connect to the Jeton network through a SOCKS5 proxy.</translation>
+        <translation>Connect to the Apicoureios network through a SOCKS5 proxy.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1450,7 +1450,7 @@
     <message>
         <location line="+25"/>
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Connect to the Jeton network through a separate SOCKS5 proxy for Tor hidden services.</translation>
+        <translation>Connect to the Apicoureios network through a separate SOCKS5 proxy for Tor hidden services.</translation>
     </message>
     <message>
         <location line="+105"/>
@@ -1585,7 +1585,7 @@
         <location line="+62"/>
         <location line="+386"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Jeton network after a connection is established, but this process has not completed yet.</translation>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Apicoureios network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-139"/>
@@ -1683,7 +1683,7 @@
     <message>
         <location line="-398"/>
         <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Cannot start jeton: click-to-pay handler</translation>
+        <translation>Cannot start Apicoureios: click-to-pay handler</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1705,7 +1705,7 @@
     <message>
         <location line="+8"/>
         <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid Jeton address or malformed URI parameters.</translation>
+        <translation>URI cannot be parsed! This can be caused by an invalid Apicoureios address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1837,7 +1837,7 @@
     <message>
         <location filename="../guiutil.cpp" line="+130"/>
         <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Enter a Jeton address (e.g. %1)</translation>
+        <translation>Enter a Apicoureios address (e.g. %1)</translation>
     </message>
     <message>
         <location line="+760"/>
@@ -2423,7 +2423,7 @@
         <location line="-3"/>
         <location line="+46"/>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Jeton network</translation>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Apicoureios network</translation>
     </message>
     <message>
         <location line="-30"/>
@@ -2731,7 +2731,7 @@
         <location line="+78"/>
         <location line="+13"/>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for jeton transactions than the network can process.</translation>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for Apicoureios transactions than the network can process.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2952,7 +2952,7 @@
     <message>
         <location line="+101"/>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Warning: Invalid Jeton address</translation>
+        <translation>Warning: Invalid Apicoureios address</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3007,7 +3007,7 @@
     <message>
         <location line="+39"/>
         <source>The Bitcoin address to send the payment to</source>
-        <translation>The Jeton address to send the payment to</translation>
+        <translation>The Apicoureios address to send the payment to</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -3034,7 +3034,7 @@
     <message>
         <location line="-1028"/>
         <source>The fee will be deducted from the amount being sent. The recipient will receive less bitcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>The fee will be deducted from the amount being sent. The recipient will receive less jetons than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</translation>
+        <translation>The fee will be deducted from the amount being sent. The recipient will receive less Apicoureioss than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3069,7 +3069,7 @@
     <message>
         <location line="+54"/>
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>A message that was attached to the jeton: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Jeton network.</translation>
+        <translation>A message that was attached to the Apicoureios: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Apicoureios network.</translation>
     </message>
     <message>
         <location line="+448"/>
@@ -3126,12 +3126,12 @@
     <message>
         <location line="+6"/>
         <source>You can sign messages/agreements with your addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>You can sign messages/agreements with your addresses to prove you can receive jetons sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
+        <translation>You can sign messages/agreements with your addresses to prove you can receive Apicoureioss sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
         <location line="+18"/>
         <source>The Bitcoin address to sign the message with</source>
-        <translation>The Jeton address to sign the message with</translation>
+        <translation>The Apicoureios address to sign the message with</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3173,7 +3173,7 @@
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this Bitcoin address</source>
-        <translation>Sign the message to prove you own this Jeton address</translation>
+        <translation>Sign the message to prove you own this Apicoureios address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3204,12 +3204,12 @@
     <message>
         <location line="+21"/>
         <source>The Bitcoin address the message was signed with</source>
-        <translation>The Jeton address the message was signed with</translation>
+        <translation>The Apicoureios address the message was signed with</translation>
     </message>
     <message>
         <location line="+37"/>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified Jeton address</translation>
+        <translation>Verify the message to ensure it was signed with the specified Apicoureios address</translation>
     </message>
     <message>
         <location line="+3"/>

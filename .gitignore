@@ -2,9 +2,9 @@
 
 *.exe
 src/bitcoin
-src/jetond
-src/jeton-cli
-src/jeton-tx
+src/acsd
+src/acs-cli
+src/acs-tx
 src/test/test_bitcoin
 src/test/test_bitcoin_fuzzy
 src/qt/test/test_bitcoin-qt
@@ -80,7 +80,7 @@ src/qt/bitcoin-qt.includes
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-jeton-qt
+acs-qt
 Bitcoin-Qt.app
 background.tiff*
 

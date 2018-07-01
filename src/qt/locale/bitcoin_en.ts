@@ -4102,7 +4102,7 @@
     <message>
         <location line="-395"/>
         <source>Bitcoin Core</source>
-        <translation type="unfinished">Bitcoin Core</translation>
+        <translation type="unfinished">Apicoureios</translation>
     </message>
     <message>
         <location line="+1"/>

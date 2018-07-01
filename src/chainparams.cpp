@@ -78,12 +78,12 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 60 / 30 * 60 * 24 * 365 * 4;
         consensus.BIP16Height = 0;
-        consensus.BIP34Height = 0;
+        consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
         consensus.BIP65Height = 0;
         consensus.BIP66Height = 0;
         consensus.powLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 3 * 60; // three minutes
+        consensus.nPowTargetTimespan = 90; // 1.5 minutes
         consensus.nPowTargetSpacing = 30;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
@@ -184,12 +184,12 @@ public:
         strNetworkID = "test";
         consensus.nSubsidyHalvingInterval = 60 / 30 * 60 * 24 * 365 * 4;
         consensus.BIP16Height = 0; // 00000000000000ce80a7e057163a4db1d5ad7b20fb6f598c9597b9665c8fb0d4 - April 1, 2012
-        consensus.BIP34Height = 0;
+        consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
         consensus.BIP65Height = 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
         consensus.powLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 3 * 60; // three minutes
+        consensus.nPowTargetTimespan = 90; // 1.5 minutes
         consensus.nPowTargetSpacing = 30;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
@@ -329,7 +329,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("75bc552ad028c791de4c879f1fa4c67ff09a160bcefb6b9a53278b91feee8522")},
+                {0, uint256S("7245e22fcacb42610d32f7d9f1c2bf70dd445690acba9c6c8a8e77148eda6da8")},
             }
         };
 

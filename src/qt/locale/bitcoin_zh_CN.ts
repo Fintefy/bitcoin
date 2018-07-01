@@ -3165,7 +3165,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <translation>Apicoureios</translation>
     </message>
     <message>
         <source>The %s developers</source>

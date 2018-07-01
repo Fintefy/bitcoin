@@ -32,6 +32,15 @@
     "string_view": "cpp",
     "map": "cpp",
     "string": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "bitset": "cpp",
+    "__bit_reference": "cpp",
+    "__split_buffer": "cpp",
+    "hash_map": "cpp",
+    "hash_set": "cpp",
+    "iterator": "cpp",
+    "list": "cpp",
+    "regex": "cpp",
+    "set": "cpp"
   }
 }

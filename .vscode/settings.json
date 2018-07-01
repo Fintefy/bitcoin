@@ -1,5 +1,20 @@
 {
   "files.associations": {
-    "*.ipp": "cpp"
+    "*.ipp": "cpp",
+    "random": "cpp",
+    "__config": "cpp",
+    "__nullptr": "cpp",
+    "cstddef": "cpp",
+    "exception": "cpp",
+    "initializer_list": "cpp",
+    "stdexcept": "cpp",
+    "type_traits": "cpp",
+    "typeinfo": "cpp",
+    "algorithm": "cpp",
+    "cfenv": "cpp",
+    "hashtable": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "utility": "cpp"
   }
 }

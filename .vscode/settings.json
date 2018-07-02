@@ -15,6 +15,18 @@
     "hashtable": "cpp",
     "unordered_map": "cpp",
     "unordered_set": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "memory": "cpp",
+    "__functional_base": "cpp",
+    "__functional_base_03": "cpp",
+    "__hash_table": "cpp",
+    "__tree": "cpp",
+    "__tuple": "cpp",
+    "array": "cpp",
+    "chrono": "cpp",
+    "functional": "cpp",
+    "limits": "cpp",
+    "ratio": "cpp",
+    "tuple": "cpp"
   }
 }

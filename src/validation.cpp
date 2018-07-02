@@ -39,6 +39,7 @@
 #include <utilstrencodings.h>
 #include <validationinterface.h>
 #include <warnings.h>
+#include <base58.h>
 
 #include <future>
 #include <sstream>
@@ -1149,8 +1150,11 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         return 0;
 
     CAmount nSubsidy = 6.18 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
-    nSubsidy >>= halvings;
+    if(nHeight == 1) {
+        nSubsidy = 158028672 * COIN;
+    } else {
+        nSubsidy >>= halvings;
+    }
     return nSubsidy;
 }
 
@@ -3189,6 +3193,28 @@ static bool ContextualCheckBlock(const CBlock& block, CValidationState& state, c
         if (block.vtx[0]->vin[0].scriptSig.size() < expect.size() ||
             !std::equal(expect.begin(), expect.end(), block.vtx[0]->vin[0].scriptSig.begin())) {
             return state.DoS(100, false, REJECT_INVALID, "bad-cb-height", false, "block height mismatch in coinbase");
+        }
+    }
+
+    if(nHeight == 1){
+        const CTxOut& output = block.vtx[0]->vout[0];
+        CTxDestination address = DecodeDestination(consensusParams.premineAddress); 
+        if (!IsValidDestination(address))
+            return state.DoS(100, false, REJECT_INVALID, "no-premine-address", false, "no premine address set");
+
+        txnouttype type;
+        std::vector<CTxDestination> addresses;
+        int nRequired;
+
+        ExtractDestinations(output.scriptPubKey, type, addresses, nRequired);
+
+        if(addresses.size() > 0){
+
+          if (addresses[0] != address)
+              return state.DoS(100, false, REJECT_INVALID, "bd-cb-address", false, "premine coinbase address invalid");
+
+          if (output.nValue < GetBlockSubsidy(nHeight, consensusParams))
+              return state.DoS(100, false, REJECT_INVALID, "bd-cb-value", false, "premine coinbase value invalid");
         }
     }
 

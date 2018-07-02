@@ -121,13 +121,13 @@ public:
         nDefaultPort = 13333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1530403200, 131443, 0x1d00ffff, 1, 6.18 * COIN);
+        genesis = CreateGenesisBlock(1530403200, 178958, 0x1d00ffff, 1, 6.18 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
         arith_uint256 bnTarget;
         bool fNegative,fOverflow;
-        bnTarget.SetCompact(0x1f00ffff, &fNegative, &fOverflow);
-        int32_t n = 131443;
+        bnTarget.SetCompact(0x1d00ffff, &fNegative, &fOverflow);
+        int32_t n = 178958;
         while(1){
           genesis = CreateGenesisBlock(1530403200, n, 0x1d00ffff, 1, 6.18 * COIN);
           if(UintToArith256(genesis.GetHash()) < bnTarget) break;
@@ -136,7 +136,7 @@ public:
         std::cout << "* n " << n << std::endl;
         std::cout << "* hashBlock " << genesis.GetHash().ToString() << std::endl;
         std::cout << "* hashMerkleRoot " << genesis.hashMerkleRoot.ToString() << std::endl;
-        assert(consensus.hashGenesisBlock == uint256S("0x0000ff42912f19582ed4ea16baa40c1d44d827a3cff1287b3640afe46af31647"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000b07cfbaddc7ffadbcee90e5eabf808a00514cd835bebbbe162e3080dc0e1"));
         assert(genesis.hashMerkleRoot == uint256S("0x0ee5434180a5654dc7d250bdc592acd51a01dd81817560667187cd342b12c969"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
@@ -168,7 +168,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         static SeedSpec6 pnSeed6_acs[] = {
-          {{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xff,0xff,0x05,0x13,0x05,0x7f}, 13333}
+          {{0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0xff,0xff,0x78,0x4f,0xda,0x62}, 13333}
         };
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_acs, pnSeed6_acs + ARRAYLEN(pnSeed6_acs));
         checkpointData = {
@@ -233,9 +233,9 @@ public:
         nDefaultPort = 18333;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1530403200, 131443, 0x1d00ffff, 1, 6.18 * COIN);
+        genesis = CreateGenesisBlock(1530403200, 178958, 0x1f00ffff, 1, 6.18 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000ff42912f19582ed4ea16baa40c1d44d827a3cff1287b3640afe46af31647"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000b07cfbaddc7ffadbcee90e5eabf808a00514cd835bebbbe162e3080dc0e1"));
         assert(genesis.hashMerkleRoot == uint256S("0x0ee5434180a5654dc7d250bdc592acd51a01dd81817560667187cd342b12c969"));
 
         // nodes with support for servicebits filtering should be at the top
@@ -319,10 +319,10 @@ public:
         nDefaultPort = 18444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1530403200, 131443, 0x207fffff, 1, 6.18 * COIN);
+        genesis = CreateGenesisBlock(1530403200, 155401, 0x207fffff, 1, 6.18 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x75bc552ad028c791de4c879f1fa4c67ff09a160bcefb6b9a53278b91feee8522"));
-        assert(genesis.hashMerkleRoot == uint256S("0x0ee5434180a5654dc7d250bdc592acd51a01dd81817560667187cd342b12c969"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00008d3e8f23d0eb865c149811dc785557764fca0262199604df1f2022ee9ba6"));
+        assert(genesis.hashMerkleRoot == uint256S("0xd99c43559fa3c3c5b41330f46e749ff9c79f4f989e561a295ff71f1488fc3c5f"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.

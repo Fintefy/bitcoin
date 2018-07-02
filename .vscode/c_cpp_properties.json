@@ -13,6 +13,11 @@
             "includePath": [
                 "${workspaceFolder}",
                 "${workspaceFolder}/src",
+                "${workspaceFolder}/src/script",
+                "${workspaceFolder}/src/consensus",
+                "${workspaceFolder}/src/leveldb/include/leveldb",
+                "${workspaceFolder}/src/leveldb/include",
+                "${workspaceFolder}/src/univalue/include",
                 "/usr/local/Cellar/qt/5.10.0_1/include",
                 "/usr/local/Cellar/qt/5.10.0_1/include/QtCore"
             ],

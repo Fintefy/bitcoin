@@ -82,7 +82,7 @@ public:
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8");
         consensus.BIP65Height = 0; // 000000000000000004c2b624ed5d7756c508d90fd0da2c7c679febfa6c4735f0
         consensus.BIP66Height = 0; // 00000000000000000379eaa19dce8c9b722d46ae6a57c2f1a988119488b50931
-        consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+        consensus.powLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 24 * 60 * 60; // one days
         consensus.nPowTargetSpacing = 30;
         consensus.fPowAllowMinDifficultyBlocks = false;
@@ -123,26 +123,8 @@ public:
         nDefaultPort = 13333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1530403200, 178958, 0x1d00ffff, 1, 6.18 * COIN);
+        genesis = CreateGenesisBlock(1530403200, 178958, 0x1f00ffff, 1, 6.18 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-
-        arith_uint256 bnTarget;
-        bool fNegative,fOverflow;
-        bnTarget.SetCompact(0x1d00ffff, &fNegative, &fOverflow);
-        int32_t n = 0;
-        while(1){
-          genesis.nNonce = n;
-          if(UintToArith256(genesis.GetHash()) < bnTarget) break;
-          n++;
-          if (n % 100000 == 0) {
-            std::cout << "* n " << n << std::endl;
-            std::cout << "* hashBlock " << genesis.GetHash().ToString() << std::endl;
-            std::cout << "* hashMerkleRoot " << genesis.hashMerkleRoot.ToString() << std::endl;
-          }
-        }
-        std::cout << "* n " << n << std::endl;
-        std::cout << "* hashBlock " << genesis.GetHash().ToString() << std::endl;
-        std::cout << "* hashMerkleRoot " << genesis.hashMerkleRoot.ToString() << std::endl;
         assert(consensus.hashGenesisBlock == uint256S("0x0000b07cfbaddc7ffadbcee90e5eabf808a00514cd835bebbbe162e3080dc0e1"));
         assert(genesis.hashMerkleRoot == uint256S("0x0ee5434180a5654dc7d250bdc592acd51a01dd81817560667187cd342b12c969"));
 

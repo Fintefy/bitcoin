@@ -27,6 +27,11 @@
     "functional": "cpp",
     "limits": "cpp",
     "ratio": "cpp",
-    "tuple": "cpp"
+    "tuple": "cpp",
+    "deque": "cpp",
+    "string_view": "cpp",
+    "map": "cpp",
+    "string": "cpp",
+    "vector": "cpp"
   }
 }

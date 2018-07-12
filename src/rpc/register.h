@@ -25,7 +25,7 @@ static inline void RegisterAllCoreRPCCommands(CRPCTable &t)
     RegisterBlockchainRPCCommands(t);
     RegisterNetRPCCommands(t);
     RegisterMiscRPCCommands(t);
-//    RegisterMiningRPCCommands(t);
+    RegisterMiningRPCCommands(t);
     RegisterRawTransactionRPCCommands(t);
 }
 

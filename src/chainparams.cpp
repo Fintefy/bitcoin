@@ -164,7 +164,7 @@ public:
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_acs, pnSeed6_acs + ARRAYLEN(pnSeed6_acs));
         checkpointData = {
             {
-                {0, uint256S("0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206")},
+                {0, uint256S("0000b07cfbaddc7ffadbcee90e5eabf808a00514cd835bebbbe162e3080dc0e1")},
             }
         };
 

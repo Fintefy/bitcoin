@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Apicoureios"
-            VALUE "FileDescription",    "acs-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "Abc"
+            VALUE "FileDescription",    "abc-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "acs-cli"
+            VALUE "InternalName",       "abc-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "acs-cli.exe"
-            VALUE "ProductName",        "acs-cli"
+            VALUE "OriginalFilename",   "abc-cli.exe"
+            VALUE "ProductName",        "abc-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

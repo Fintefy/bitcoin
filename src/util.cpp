@@ -577,13 +577,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Acs
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Acs
-    // Mac: ~/Library/Application Support/Acs
-    // Unix: ~/.acs
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Abc
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Abc
+    // Mac: ~/Library/Application Support/Abc
+    // Unix: ~/.abc
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Acs";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Abc";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -593,10 +593,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Acs";
+    return pathRet / "Library/Application Support/Abc";
 #else
     // Unix
-    return pathRet / ".acs";
+    return pathRet / ".abc";
 #endif
 #endif
 }

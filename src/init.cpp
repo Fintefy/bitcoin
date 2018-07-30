@@ -516,8 +516,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<http://apicoureios.org>";
-    const std::string URL_WEBSITE = "<http://apicoureios.org>";
+    const std::string URL_SOURCE_CODE = "<http://abc.org>";
+    const std::string URL_WEBSITE = "<http://abc.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-6"), COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

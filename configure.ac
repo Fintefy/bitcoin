@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Apicoureios]])
-AC_INIT([Apicoureios],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/acs/acs/issues],[acs],[https://acs.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Abc]])
+AC_INIT([Abc],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/abc/abc/issues],[abc],[https://abc.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=acsd
-BITCOIN_GUI_NAME=acs-qt
-BITCOIN_CLI_NAME=acs-cli
-BITCOIN_TX_NAME=acs-tx
+BITCOIN_DAEMON_NAME=abcd
+BITCOIN_GUI_NAME=abc-qt
+BITCOIN_CLI_NAME=abc-cli
+BITCOIN_TX_NAME=abc-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])

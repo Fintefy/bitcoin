@@ -18,6 +18,7 @@
                 "${workspaceFolder}/src/leveldb/include/leveldb",
                 "${workspaceFolder}/src/leveldb/include",
                 "${workspaceFolder}/src/univalue/include",
+                "${workspaceFolder}/src/qt",
                 "/usr/local/Cellar/qt/5.10.0_1/include",
                 "/usr/local/Cellar/qt/5.10.0_1/include/QtCore"
             ],

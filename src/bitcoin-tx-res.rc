@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Apicoureios"
-            VALUE "FileDescription",    "acs-tx (CLI Apicoureios transaction editor utility)"
+            VALUE "CompanyName",        "Abc"
+            VALUE "FileDescription",    "abc-tx (CLI Abc transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "acs-tx"
+            VALUE "InternalName",       "abc-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "acs-tx.exe"
-            VALUE "ProductName",        "acs-tx"
+            VALUE "OriginalFilename",   "abc-tx.exe"
+            VALUE "ProductName",        "abc-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END
